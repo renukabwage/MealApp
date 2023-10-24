@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mealApp.css">
+    <title>Meal App</title>
+</head>
+<body>
+    <header>
+        <h1>Meals App</h1>
+    </header>
+    <!-- Meal search -->
+    <main>
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Search for a meal...">
+          <ul id="searchResults" class="search-results"></ul>
+      </div>
+      
+    </main>
+       <!-- Favorite Meals -->
+     <div id="favoratieMealPage" class="favorate-Meal-page" style="display:none";>
+      
+       <h3 style="text-align: center; border-bottom: 1px solid black;"> Favorite Meals</h3><br>
+        <ul id="favoriteMeals"></ul>
+        <button id="closeFavButton" class="close-button" style="float: inline-end";>Close</button>
+    </div>
+   
+ <!-- Meal Detail Page -->
+    <div id="mealDetailPage" class="meal-detail-page">
+        <button id="backButton" class="back-button">Back</button>
+        <div id="mealDetailContainer" class="meal-detail-container"></div>
+    </div>
+    <script src="mealApp.js"></script>
+</body>
+</html>
